@@ -1,0 +1,113 @@
+#itemRoot{
+    -fx-background-color: rgb(190, 200, 200);
+    -fx-border-width:2;
+    -fx-border-color: rgb(96,109,121);
+    -fx-border-radius: 5px;
+
+}
+
+#itemRoot:hover{
+    -fx-background-color: rgb(190, 203, 210);
+}
+
+
+
+#doneBtn{
+
+    -fx-background-color: rgb(190, 200, 200);
+    -fx-border-color: #19be6b;
+    -fx-border-width: 1;
+    -fx-border-radius: 20;
+
+}
+
+#doneBtn:hover{
+    -fx-background-color: #6a7d7d;
+    -fx-background-radius: 20;
+
+}
+
+#doneBtn:pressed{
+
+    -fx-background-color: #34495e;
+    -fx-background-radius: 20;
+
+}
+
+
+#labelType{
+    -fx-background-color: rgb(190, 200, 200);
+}
+
+#labelType:hover{
+    -fx-background-color: #96a6a6;
+
+}
+
+
+#deleteBtn{
+    -fx-background-image:url("../../../resource/images/delete.png");
+    -fx-background-size: cover;
+    -fx-background-position: top;
+    -fx-background-color: rgb(190, 200, 200);
+}
+
+#deleteBtn:hover{
+    -fx-background-color: #6a7d7d;
+}
+
+#deleteBtn:pressed{
+    -fx-background-color: #34495e;
+}
+
+#itemImage{
+    -fx-background-image:url("../../../resource/images/itempicture.png");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-color: rgb(190, 200, 200);
+}
+
+#itemImage:hover{
+    -fx-background-color: #6a7d7d;
+}
+
+/*和前面的delete和itemImage都是一样的，想加个逗号合起来写，但是都是会出现一些不正常的显示，对css不是很熟，还是分开写吧*/
+#creatIco{
+    -fx-background-image:url("../../../resource/images/deadlineIco.png");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-color: rgb(190, 200, 200);
+}
+
+#creatIco:hover{
+    -fx-background-color: #6a7d7d;
+}
+
+
+#deadlineIco{
+    -fx-background-image:url("../../../resource/images/creatIco.png");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-color: rgb(190, 200, 200);
+}
+
+#deadlineIco:hover{
+    -fx-background-color: #6a7d7d;
+}
+
+
+#edit{
+    -fx-background-image: url("../../../resource/images/edit.png");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-color: rgb(190, 200, 200);
+}
+
+#edit:hover{
+    -fx-background-color: #6a7d7d;
+}
+
+#edit:pressed{
+    -fx-background-color: #34495e;
+}
+

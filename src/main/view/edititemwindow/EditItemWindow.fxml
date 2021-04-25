@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="EditItemWindowRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="400.0" stylesheets="@EditItemWindow.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.ControlOfEditItemWindow">
+   <children>
+      <HBox alignment="CENTER" prefHeight="30.0" prefWidth="400.0" spacing="20.0">
+         <children>
+            <Label text="标题">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <TextField fx:id="titleText" prefHeight="25.0" prefWidth="250.0" promptText="请在这里输入标题" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <HBox alignment="CENTER" layoutY="30.0" prefHeight="104.0" prefWidth="400.0" spacing="20.0">
+         <children>
+            <Label text="描叙" />
+            <TextArea fx:id="descriptionText" prefHeight="32.0" prefWidth="250.0" promptText="请输入描述" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutY="134.0" prefHeight="30.0" prefWidth="400.0" spacing="20.0">
+         <children>
+            <Label fx:id="deadlineLabel" prefHeight="15.0" prefWidth="69.0" text="截止时间" />
+            <DatePicker fx:id="deadlineSelect" prefHeight="23.0" prefWidth="126.0" />
+            <TextField fx:id="exactHourTextField" alignment="CENTER" prefHeight="23.0" prefWidth="40.0" promptText="时" />
+            <TextField fx:id="exactMinuteTextField" alignment="CENTER" prefHeight="23.0" prefWidth="40.0" promptText="分" />
+
+         </children></HBox>
+      <Button fx:id="saveNewItem" layoutX="179.0" layoutY="306.0" mnemonicParsing="false" onAction="#handleButtonClicks" text="save" />
+      <VBox alignment="CENTER" layoutY="207.0" prefHeight="65.0" prefWidth="400.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="400.0" spacing="15.0">
+               <children>
+                  <Label text="标签" />
+                  <ChoiceBox fx:id="itemLabelSelect" prefHeight="23.0" prefWidth="212.0" />
+                  <Button fx:id="deleteLabel" onAction="#handleButtonClicks" mnemonicParsing="false" text="deleteLabel" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="400.0" spacing="20.0">
+               <children>
+                  <TextField fx:id="newLabelField" prefHeight="23.0" prefWidth="213.0" />
+                  <Button fx:id="newLable" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="23.0" prefWidth="83.0" text="newLable" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox fx:id="criculHbox" alignment="CENTER" layoutX="1.0" layoutY="170.0" prefHeight="30.0" prefWidth="400.0" spacing="10.0">
+         <children>
+            <CheckBox fx:id="isCriculBox" mnemonicParsing="false" />
+            <Label text="设为重复，每" />
+            <TextField fx:id="criculIntervalCountField" alignment="CENTER" prefHeight="23.0" prefWidth="40.0" promptText="？" />
+            <ChoiceBox fx:id="criculUnitChoiceBox" prefHeight="23.0" prefWidth="33.0" />
+            <Label fx:id="criculLeftCountTip" text="重复一次，一共重复" />
+            <TextField fx:id="criculCountField" alignment="CENTER" prefHeight="23.0" prefWidth="40.0" promptText="？" />
+            <Label text="次" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

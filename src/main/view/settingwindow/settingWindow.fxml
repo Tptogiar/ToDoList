@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" stylesheets="@settingWindow.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.ControlOfSettingWindow">
+   <children>
+      <Button fx:id="setDateDirectory" onAction="#handleButtonClicks"
+              layoutX="194.0" layoutY="139.0" mnemonicParsing="false" text="设置数据保存目录" />
+      <HBox alignment="CENTER" layoutX="17.0" layoutY="105.0" prefHeight="31.0" prefWidth="466.0">
+         <children>
+            <Label text="当前数据保存路径：" />
+            <Label fx:id="path" alignment="CENTER" prefHeight="23.0" prefWidth="345.0" text="path" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

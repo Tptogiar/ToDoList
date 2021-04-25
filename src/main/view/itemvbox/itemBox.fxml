@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="itemRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="101.0" prefWidth="530.0" stylesheets="@itemBox.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.ControlOfItemBox">
+   <children>
+      <Label fx:id="itemDescirption" layoutX="67.0" layoutY="25.0" prefHeight="23.0" prefWidth="317.0" text="描述" textFill="#081dd7">
+         <font>
+            <Font name="System Italic" size="20.0" />
+         </font></Label>
+      <Button fx:id="labelType" layoutX="226.0" layoutY="56.0" mnemonicParsing="false" />
+      <Label fx:id="itemTitle" layoutX="20.0" layoutY="3.0" prefHeight="27.0" prefWidth="100.0" text="标题">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <Button fx:id="doneBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="449.0" layoutY="54.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="30.0" prefWidth="63.0" text="Done" textFill="#19be6b">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="deleteBtn" layoutX="20.0" layoutY="50.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="35.0" prefWidth="30.0" />
+      <Button fx:id="itemImage" layoutX="100.0" layoutY="53.0" mnemonicParsing="false" onAction="#handleButtonClicks" onMouseEntered="#showImage" prefHeight="30.0" prefWidth="30.0" />
+      <Button fx:id="creatIco" layoutX="140.0" layoutY="53.0" pickOnBounds="true" prefHeight="30.0" prefWidth="30.0" />
+      <Button fx:id="deadlineIco" layoutX="180.0" layoutY="53.0" pickOnBounds="true" prefHeight="30.0" prefWidth="30.0" />
+      <ImageView fx:id="isCriculIco" fitHeight="30.0" fitWidth="30.0" layoutX="400.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="isPastDeadlineIco" fitHeight="30.0" fitWidth="30.0" layoutX="440.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="isFinshIco" fitHeight="30.0" fitWidth="30.0" layoutX="480.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" />
+      <ProgressBar fx:id="progerssBar" layoutX="20.0" layoutY="86.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="9.0" prefWidth="494.0" progress="1.0" />
+      <Button fx:id="edit" layoutX="60.0" layoutY="53.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="30.0" prefWidth="30.0" />
+
+
+
+
+
+
+
+
+      
+   </children>
+</AnchorPane>

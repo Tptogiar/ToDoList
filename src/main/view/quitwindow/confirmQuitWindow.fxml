@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="confirmQuitRoot" prefHeight="130.0" prefWidth="190.0" stylesheets="@confirmQutiWindow.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="main.controller.ControlOfConfirmQuitWindow">
+   <children>
+      <Button fx:id="yes" layoutX="45.0" layoutY="59.0" mnemonicParsing="false" text="Yes" />
+      <Label alignment="CENTER" layoutX="22.0" layoutY="9.0" prefHeight="43.0" prefWidth="156.0" text="确认退出?" textFill="#aeaeae">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="no" layoutX="114.0" layoutY="59.0" mnemonicParsing="false" text="No" />
+   </children>
+</AnchorPane>

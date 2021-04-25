@@ -1,0 +1,40 @@
+#confirmQuitRoot{
+    -fx-background-color: #d3dada;
+
+}
+
+
+
+
+/*对css不熟悉，将yes和no用逗号隔开一起发的话会使两个产生差异，算了分开写得了*/
+
+#yes{
+    -fx-background-color: #d3dada;
+
+}
+
+
+#yes:pressed{
+    -fx-background-color: #748989;
+}
+
+
+#yes:hover{
+    -fx-background-color: #bcc6c6;
+}
+
+
+
+
+#no{
+    -fx-background-color: #d3dada;
+
+}
+
+#no:pressed{
+    -fx-background-color: #748989;
+}
+
+#no:hover{
+    -fx-background-color: #bcc6c6;
+}

@@ -1,0 +1,43 @@
+#mainRoot{
+    -fx-background-color : rgb(190, 200, 200);
+    /*background: linear-gradient(top,#BBD2C5, #536976);*/
+
+
+}
+
+
+
+
+
+#topBar{
+
+    -fx-background-color:  #eaeeee;
+}
+
+#content{
+    /*background: linear-gradient(top,#BBD2C5, #536976);*/
+
+}
+
+
+
+#topBar .button{
+    -fx-border-radius: 5px;
+    -fx-border-color: #fff;
+    -fx-border-width:2;
+    -fx-font-size: 20;
+    -fx-font-weight: 100;
+    -fx-background-color: rgb(190, 200, 200);
+}
+
+#topBar .button:pressed{
+    -fx-border-color:  rgb(35,149,184);
+}
+
+#topBar .button:hover{
+    -fx-background-color:  #6a7d7d;
+}
+
+#search{
+    /*-fx-font-size: 10;*/
+}

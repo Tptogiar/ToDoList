@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<!--<HBox fx:id="test" >-->
+<!--   <children>-->
+<!--   </children>-->
+<!--</HBox>-->
+
+<AnchorPane fx:id="mainRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" stylesheets="@mainWindow.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.ControlOfMainWindow">
+         <children>
+            <AnchorPane fx:id="topBar" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="700.0">
+               <children>
+                  <AnchorPane prefHeight="33.0" prefWidth="166.0">
+                     <children>
+                        <Button fx:id="toDoPage" layoutX="11.0" layoutY="5.0" mnemonicParsing="false" onAction="#handleButtonClicks" text="ToDo">
+                           <textFill>
+                              <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </RadialGradient>
+                           </textFill>
+                        </Button>
+                        <Button fx:id="newItem" layoutX="102.0" layoutY="5.0" mnemonicParsing="false" onAction="#handleButtonClicks" text="New" textFill="WHITE" />
+                     </children>
+                  </AnchorPane>
+                <Button fx:id="setting" layoutX="587.0" layoutY="7.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="45.0" prefWidth="106.0" text="Setting" textFill="WHITE" />
+                  <AnchorPane layoutX="170.0" layoutY="9.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="307.0">
+                     <children>
+                        <TextField fx:id="searchField" alignment="CENTER" layoutX="14.0" layoutY="6.0" prefHeight="31.0" prefWidth="319.0" promptText="搜索标题或描述">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></TextField>
+                        <Button fx:id="resetBtn" layoutX="338.0" layoutY="5.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="31.0" prefWidth="72.0" style="-fx-font-size: 15;" text="Reset" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold Italic" size="10.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="63.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="157.0">
+               <ChoiceBox fx:id="sortBox" layoutX="10.0" layoutY="15.0" prefHeight="20.0" prefWidth="130.0" />
+         <ChoiceBox fx:id="classifyBox" layoutX="10.0" layoutY="45.0" prefHeight="20.0" prefWidth="130.0" />
+         <CheckBox fx:id="showCricul" layoutX="25.0" layoutY="79.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="100.0" text="重复执行项" />
+
+
+
+
+            </AnchorPane>
+            <ScrollPane layoutX="150.0" layoutY="62.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="638.0" prefWidth="550.0" style="-fx-background-color: rgb(190, 200, 200);">
+               <content>
+                  <VBox fx:id="content" maxWidth="-Infinity" prefHeight="638.0" prefWidth="527.0" style="-fx-background-color: rgb(190, 200, 200);" />
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
