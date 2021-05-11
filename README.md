@@ -2,8 +2,8 @@
 这是一个使用JavaFx框架编写的软件，运行于win平台，练手项目，还不足以被真正使用
 
 主界面
+![ToDoList_01](https://user-images.githubusercontent.com/79641956/117850555-00ad0e00-b2b8-11eb-8192-51a49408e0eb.png)
 
-![Snipaste_2021-04-28_16-24-12](C:\Users\逸安\Downloads\Snipaste_2021-04-28_16-24-12.png)
 
 新建代办项目
 
